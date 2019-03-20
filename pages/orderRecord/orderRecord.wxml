@@ -1,0 +1,76 @@
+<view>
+  <!--行车路程  -->
+  <view class='s_myorder'>
+    <text class='s_my'>我的行程</text>
+    <!-- <view class='s_qixingitem'>
+      <text class='s_qixing'>骑行</text>
+      <view class='s_gong'>
+        <text>{{s_qixing}}</text>  里程（公里）
+      </view>
+    </view> -->
+    <view class="swiper-tab">
+        <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">已完成</view>
+        <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">未完成</view> 
+    </view>
+  </view>
+  <view>
+    <view class="weui-cells__title" hidden="{{!isShow}}">
+      <block wx:if="{{orderListData == 1}}">
+        <view style='padding:0 40rpx'>
+          <view class="s_order bor_b" wx:for="{{s_orderList}}" wx:key="{{orderList}}" wx:for-item="orderList">
+            <view class="s_orderData">{{orderList.create_time}}</view> 
+            <view class="s_orderNumber">车编号:{{orderList.car_id}}</view> 
+            <view class="s_orderItem flex_i">
+                <view class='s_orderTime'>
+                  <i class="iconfont icon-shizhong"></i>
+                  <text>时间:{{orderList.hours}}小时{{orderList.mins}}分钟{{orderList.secs}}秒</text>
+                </view>
+                <view class='s_orderPay'>
+                  <i class="iconfont icon-qianbi"></i>
+                  <text>花费:{{orderList.money}}元</text>
+                </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view wx:else class='s_zw'>
+        <view class='flex_j'>
+          <image src='../../public/image/logo.png'></image>
+        </view>
+        <text class='flex_j'>暂无行程</text>
+      </view>
+    </view>
+    <view class="weui-cells__title" hidden="{{isShow}}">
+      <block wx:if="{{s_unOrderList!=''}}">
+        <view style='padding:0 40rpx'>
+          <view class="s_order bor_b mb_20" wx:for="{{s_unOrderList}}" wx:key="{{itemName}}" wx:for-item="itemName">
+            <view class="s_orderData">{{itemName.create_time}}</view> 
+            <view class="s_orderNumber">车编号:{{itemName.car_id}}</view>
+            <view class="s_orderItem flex_i mb_20">
+                <view class='s_orderTime'>
+                  <i class="iconfont icon-shizhong"></i>
+                  <text>时间:{{itemName.hours}}小时{{itemName.mins}}分钟{{itemName.secs}}秒
+                  </text>
+                </view>
+                <view class='s_orderPay'>
+                  <i class="iconfont icon-qianbi"></i>
+                  <text>花费:{{itemName.money}}元</text>
+                </view>
+            </view>
+            <view class='orderCon'>
+              <view class="orderCancelItem orderCancel" bindtap='pay' data-id="{{itemName.id}}" data-money="{{itemName.money}}">支付</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view wx:else class='s_zw'>
+        <view class='flex_j'>
+          <image src='../../public/image/logo.png'></image>
+        </view>
+        <text class='flex_j'>暂无行程</text>
+      </view> 
+    </view>
+  </view>
+</view>
+
+

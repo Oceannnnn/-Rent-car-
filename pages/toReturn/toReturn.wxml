@@ -1,0 +1,10 @@
+<!--pages/toReturn/toReturn.wxml-->
+<view container>
+  <view class='confirm flex_i'>
+    <image src='../../public/image/huan.png'/>
+    <view>请确认已到店</view>  
+  </view>
+  <view class='pay-btn' bindtap='toReturn'>
+    <text>确定还车</text>
+  </view>
+</view>

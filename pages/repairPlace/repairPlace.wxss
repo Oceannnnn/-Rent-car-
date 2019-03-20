@@ -1,0 +1,68 @@
+/* pages/repairPlace/repairPlace.wxss */
+@import "../../public/font/iconfont.wxss";
+.page {
+  background:#f3f4f5;
+  display:flex;
+  height:100vh;
+  background:#fff;
+  flex-direction:column;
+}
+.map-wrap {
+  display: flex;
+  flex-direction:column;
+  flex:1;
+  width: 100%;
+}
+.map-wrap map{
+  display:block;
+  flex:1;
+  height:150rpx;
+  width: 100%;
+}
+.rHeader{
+  font-size: 38rpx;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.rRight{
+  width: 100%;
+  justify-content:flex-end;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+  color: #999;
+}
+.rRight .iconfont{
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+.r_phone{
+  margin-right: 30rpx;
+}
+.rTime .iconfont{
+  font-size: 48rpx;
+}
+.rLeft{
+  width: 100%;
+  padding-bottom: 20rpx;
+}
+.rAddress{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.repairItem{
+  padding: 30rpx;
+}
+.r_phone,.r_address{
+  padding: 15rpx 40rpx;
+  border-radius: 50rpx;
+  border: 1px solid #16A085;
+}
+.map-icon{
+  width:76rpx;
+  height:76rpx;
+  position:absolute;
+  bottom:30rpx;
+  left:3%;
+}

@@ -1,0 +1,33 @@
+<!--pages/login/login.wxml-->
+<view>
+
+  <view class='loginHeader c_16A flex_ajf'>
+    <image src='../../public/image/logo1.png'></image>
+    <view class='text'>风擎租车</view>
+  </view>
+  <view class='login-phone'>
+    <view class='input-wrapper'>
+      <view class='phone-input'>
+        <input class='input' placeholder='请输入手机号' maxlength="13" value='{{phoneText}}' bindinput='input'/>
+        <view wx:if='{{phoneText!=0}}' class='close clean-input' bindtap='cleanInput'>
+          <i class="iconfont icon-cha2"></i>
+        </view>
+      </view>
+      <view class='sms-input' wx:if='{{show}}'>
+        <input class='input' maxlength='6' placeholder='请输入验证码' type='number' value='{{smsText}}' bindinput='smsinput'/>
+        <view class="sms-btn">
+          <view class="mf-btn inline {{sms_disable}}" bindtap="{{handleClick}}">
+          {{showTime?time:''}}{{btnText}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='btn-wrapper'>
+      <button class='mf-btn {{btn_disable}} nextButton' bindtap='{{toNext}}'>{{loginText}}</button>
+    </view>
+    <view class='login_btn'>
+      <button bindtap='is_FengUser'>已有账号，点击登陆</button> 
+    </view>
+  </view>
+
+</view>

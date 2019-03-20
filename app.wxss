@@ -1,0 +1,78 @@
+/**app.wxss**/
+.flex{
+  display: flex;
+}
+.flex_i{
+  display: flex;
+  align-items: center;
+}
+.flex_ic{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.flex_j{
+  display: flex;
+  justify-content: center;
+}
+.flex_af{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+.flex_ajf{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction:column;
+}
+.p_40{
+  padding: 40rpx
+}
+.last_DawnImage{
+  width: 40rpx;
+  height: 40rpx;
+}
+.bor_b{
+  border-bottom: 1px solid #ecf0f1;
+}
+.f_28{
+  font-size: 28rpx;
+}
+.f_34{
+  font-size: 34rpx;
+}
+.f_40{
+  font-size: 40rpx;
+}
+.f_32{
+  font-size: 32rpx;
+}
+.c_999{
+  color:#999;
+}
+.bg_f{
+  background: #fff;
+}
+.s_foot{
+  width:90%;
+  color: #fff;
+  background: #16A085;
+  font-size: 36rpx;
+  border-radius:10rpx; 
+}
+.c_16A{
+  color: #16A085;
+}
+.mb_20{
+  margin-bottom: 20rpx;
+}
+.mb_10{
+  margin-bottom: 10rpx;
+}
+.ml_10{
+  margin-left: 10rpx;
+}
+.ml_20{
+  margin-left: 20rpx;
+}

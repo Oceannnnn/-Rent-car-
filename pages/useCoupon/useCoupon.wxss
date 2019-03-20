@@ -1,0 +1,60 @@
+/* pages/useCoupon/useCoupon.wxss */
+.coupon_item{
+  padding: 20rpx 30rpx;
+  border: 1px solid #E0A97B;
+  box-shadow: 1px 1px 1px #E0A97B;
+  margin-bottom: 40rpx;
+}
+.coupon_body{
+  border-bottom: 1px dashed #ddd;
+  color: #A96C37;
+  align-items: flex-end;
+}
+.left_header{
+  font-size: 40rpx;
+}
+.coupon_footer{
+  font-size: 26rpx;
+  color: #B0B0B0;
+  margin-top: 20rpx;
+}
+.body_r{
+  color: #FA453B;
+}
+.r_money{
+  font-size: 70rpx;
+}
+.right_footer{
+  color: #6E6E6E;
+}
+.body_l,.body_r{
+  flex-direction: column;
+}
+.body_r{
+  align-items: flex-end; 
+}
+.useCoupon_foot{
+  padding:30rpx 0;
+  text-align:center;
+  width:100%;
+  position:fixed;
+  bottom:0%;
+  left:0;
+  background:#fff;
+  color:#999;
+  font-size:32rpx;
+  box-shadow: 1px 1px 6px #999;
+}
+.coupon_con{
+  margin-bottom: 60rpx;
+}
+.s_qiqingquan{
+  color: #999;
+  margin: 42% 0 0;
+}
+.s_qiqingquan image{
+  width: 260rpx;
+  height: 260rpx;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}

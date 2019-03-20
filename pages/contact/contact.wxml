@@ -1,0 +1,31 @@
+<!--pages/contact/contact.wxml-->
+<view  class='s_page'>
+  <view class='flex_j'>
+    <image src='../../public/image/logo1.png'></image>
+  </view>
+  <view class='flex_j s_title'>{{name}}</view>
+  <navigator class='s_jianjie' url='../abstract/abstract'>
+    <text>风擎租车为您提供共享电动车服务，专业、酷炫、智能、绿色、共享。</text>
+  </navigator>
+   <view class='p_40'>
+    <view class='s_item bor_b flex'>
+      <view class='s_header'>公司地址</view>
+      <view class='s_body'>{{address}}</view>
+    </view>
+    <view class='s_item bor_b flex'>
+      <view class='s_header'>公司电话</view>
+      <view class='s_body'>{{phone}}</view>
+    </view>
+    <view class='s_item bor_b flex'>
+      <view class='s_header'>官网小程序</view>
+      <navigator class='s_body fqgw' target="miniProgram" open-type="navigate" appId="wx1773ca9a5221af5b" >点击进入</navigator>
+    </view>
+  </view>
+  <view class='s_phone flex' bindtap='s_calling'>
+    <button class='s_foot'>
+      <i class="iconfont icon-dianhua"></i>
+      <text>联系客服</text>
+    </button>
+  </view>
+</view>
+  

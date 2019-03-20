@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<!-- 顶部横幅 -->
+<view class='swiper'>
+  <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000">
+    <block wx:for="{{msgList}}" wx:key="{{item}}">
+      <swiper-item>
+        <view class="swiper_item">{{item.title}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='map-wrap' catchtap='s_takeback'>
+  <map id='map' class='{{map}}' latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="{{scale}}" bindmarkertap="bindmarkertap" polyline='{{polyline}}' show-location>
+      <!-- 中心坐标 -->
+      <cover-image class='map-icon_point' src='../../public/image/point_in_map.png' />
+      <cover-view class='ceng' hidden="{{actionSheetHidden}}" bindtap='actionSheetbindchange'></cover-view>
+      <!-- 控件 -->
+      <cover-view class='map-group' hidden="{{!actionSheetHidden}}">
+        <cover-image class='map-icon map-icon_user' src='../../public/image/user.png' bindtap='toUser'/>
+        <cover-image class='map-icon map-icon_dw' src='../../public/image/dw.png' bindtap='toLocation'/>
+      </cover-view>
+      <cover-image src='../../public/image/tool.png' class="map-icon map-icon_tool" bindtap="actionSheetTap" hidden="{{!actionSheetHidden}}"></cover-image>
+  </map>
+</view>
+<view class='main-btn' bindtap='toScan' hidden="{{!actionSheetHidden}}">
+  <view class='main-text' wx:if="{{s_isLogin == 1}}">
+    <image src='../../public/image/saoma.png'></image>
+    <view>扫码解锁</view>
+  </view>
+  <view class='main-text' wx:else>
+    <view>注册/登陆</view>
+  </view>
+</view>
+<view class='foot-btn' hidden="{{actionSheetHidden}}">
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange"> 
+  <action-sheet-item class="flex_i item" bindtap="{{item.bindtap}}" wx:for-items="{{actionSheetItems}}" wx:key="{{txt}}">
+    <image src='../../public/image/tool{{item.index}}.png'></image>
+    {{item.txt}}
+  </action-sheet-item>
+  <!-- <view class="heng"></view> -->
+  <action-sheet-cancel class="cancel">取消</action-sheet-cancel> 
+</action-sheet> 
+</view>

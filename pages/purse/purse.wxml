@@ -1,0 +1,42 @@
+<!--pages/purse/purse.wxml-->
+<view class='p_40'>
+  <!-- <navigator url="../member/member" class='flex_ic bor_b s_card p44'>
+    <view>
+      <text>{{s_member}}</text>
+    </view>
+    <view class='flex_i'>
+      <text class='c_999 f_28' wx:if="{{!s_isMember}}" style='font-weight:100;'>成为会员？</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </view>
+  </navigator>
+  <view class='flex_ic bor_b s_lastDay p44'>
+    <view>
+      <text class='s_text'>剩余时间</text>
+      <view>
+        <text>{{s_days}}</text> 天
+      </view>
+    </view>
+    <view class='s_buy'>
+      <button bindtap='s_goBuy' wx:if="{{s_isWeekend}}">周末特惠</button>
+      <button bindtap='s_goBuy' wx:else>续费</button>
+    </view>
+  </view> -->
+  <navigator url="../balance/balance" class='flex_ic bor_b p44 f_28'>
+    <view>
+      <text>余额</text>
+    </view>
+    <view class='flex_i'>
+      <text class='c_999'>{{s_balance}}元</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </view>
+  </navigator>
+  <!-- <navigator url="../balance/balance" class='flex_ic p44 f_28'>
+    <view>
+      <text>我的红包</text>
+    </view>
+    <view class='flex_i'>
+      <text class='c_999'>0元</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </view>
+  </navigator> -->
+</view>

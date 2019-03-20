@@ -1,0 +1,30 @@
+.s_balance image.yue_icon{
+  margin-top: 160rpx; 
+  width: 140rpx;
+  height: 140rpx;
+}
+.s_text text{
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  letter-spacing: 1px;
+}
+.s_money .s_num{
+  font-size: 74rpx;
+  margin-right: 6rpx;
+  letter-spacing: 1px;
+  margin-top: -10rpx;
+}
+.s_money{
+  margin: 20rpx 0 80rpx;
+  font-size: 50rpx;
+  align-items: center;  
+}
+.record{
+  position:absolute;
+  right:40rpx;
+  top:60rpx;
+  font-size:32rpx;
+  color:#333;
+  border-bottom:1px solid #333;
+  padding-bottom:10rpx;
+}

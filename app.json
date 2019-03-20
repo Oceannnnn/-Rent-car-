@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/authentication/authentication",
+    "pages/balance/balance",
+    "pages/pay/pay",
+    "pages/coupons/coupons",
+    "pages/toLogin/toLogin",
+    "pages/record/record",
+    "pages/orderRecord/orderRecord",
+    "pages/useCar/useCar",
+    "pages/payOrderCar/payOrderCar",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/contact/contact",
+    "pages/abstract/abstract",
+    "pages/merchant/merchant",
+    "pages/orderCard/orderCard",
+    "pages/purse/purse",
+    "pages/recharge/recharge",
+    "pages/quotationRules/quotationRules",
+    "pages/charge/charge",
+    "pages/chargingPlace/chargingPlace",
+    "pages/repairPlace/repairPlace",
+    "pages/unlock/unlock",
+    "pages/useCoupon/useCoupon",
+    "pages/toReturn/toReturn"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#16A085",
+    "navigationBarTitleText": "风擎租车",
+    "navigationBarTextStyle":"#fff"
+  }
+}

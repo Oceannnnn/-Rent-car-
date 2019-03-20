@@ -1,0 +1,37 @@
+/* pages/recharge/recharge.wxss */
+page{
+  background: #ecf0f1;
+}
+.s_parameterWrap{
+  padding: 20rpx 40rpx;
+  background: #fff;
+  height: 300rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-content: space-around;
+}
+.s_parameterInfo{
+  width: 45%;
+  text-align: center;
+  border:1px solid #16A085; 
+  box-sizing:border-box;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+.s_checked_parameter{
+  background: #16A085;
+  color: #fff;
+}
+.s_goRecharge{
+  text-align: center;
+  position: fixed;
+  bottom: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.s_goRecharge > view{
+  line-height: 48rpx;
+  margin-bottom: 40rpx;
+}

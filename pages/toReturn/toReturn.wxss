@@ -1,0 +1,26 @@
+/* pages/toReturn/toReturn.wxss */
+page{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.confirm {
+  margin-top: 160rpx;
+  color: #666;
+}
+.confirm image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.pay-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 300rpx 0 0 0;
+  font-size: 30rpx;
+  color: #fff;
+  background:#16A085;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,16 @@
+/* pages/abstract/abstract.wxss */
+.s_abstract{
+  font-size: 40rpx;
+}
+.s_about{
+  margin-top: 40rpx;
+  font-size: 34rpx;
+}
+.s_con{
+  font-size: 34rpx;
+  display: block;
+  text-indent:40rpx; 
+  margin-top: 20rpx;
+  color: #333;
+  line-height: 70rpx;
+}

@@ -1,0 +1,83 @@
+/* pages/orderCard/orderCard.wxss */
+page{
+    background: #ecf0f1;
+}
+.sellerHeader{
+  margin-bottom: 20rpx;
+  font-size: 44rpx;
+  padding: 30rpx 40rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1999;
+  width: 100%;
+  box-shadow:1px 1px 5px #ddd;
+}
+.order_body{
+  margin-top: 140rpx;
+}
+.s_order{
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 30rpx 40rpx;
+}
+.s_zw image{
+  width: 260rpx;
+  height: 260rpx;
+  margin: 60rpx 0;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
+.s_zw text{
+ color: #999;
+}
+.s_zw{
+  margin: 30% 0 0;
+}
+.orderCon{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content:flex-end;
+}
+.orderCancelItem{
+  padding: 15rpx;
+  width: 20%;
+  text-align: center;
+  border-radius: 10rpx;
+  color: #fff;
+  font-size:34rpx;
+}
+.orderComplete{
+  background: #16A085;
+}
+.orderCancel{
+  background: #DA242A;
+}
+.sellerList{
+  font-size: 34rpx;
+  color: #333;
+}
+.sellerList view{
+  margin-bottom: 20rpx;
+}
+.sellerList text{
+  color: #999;
+  font-size: 32rpx;
+}
+.s_sellerName{
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.ordercanc{
+  background: #ddd;
+}
+.cancel_text{
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.orderPay{
+  background: #fff;
+  color: #DA242A;
+  border: 1px solid #DA242A;
+}

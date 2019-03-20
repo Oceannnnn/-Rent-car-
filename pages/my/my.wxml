@@ -1,0 +1,52 @@
+<view class="s_my">
+  <view class="s_info">
+      <image src="{{s_userInfo.avatarUrl}}"></image>
+      <view class='s_name flex_i'>
+        <view>{{s_userInfo.nickName}}</view>
+        <view>
+          <text wx:if="{{IdCard == 1}}" class='c_16A'>（已认证）</text>
+          <text wx:else class='c_16A' bindtap='IdCard'>（未认证）</text>
+        </view>
+      </view>
+      <view class='flex_i'>
+        <!-- <view class='s_member'>
+          <text wx:if="{{s_member}}">会员</text>
+          <text wx:else>普通会员</text>
+        </view> -->
+        <view class="s_integral">
+            <text>积分：{{integral}}</text>
+        </view>
+      </view>
+  </view>
+
+  <view class="s_nav_list">
+    <navigator url="../purse/purse" class="s_nav_item bor_b">
+      <i class="iconfont icon-wodeqianbao1"></i>
+      <text>我的钱包</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </navigator>
+    <navigator url="../coupons/coupons" class="s_nav_item bor_b">
+      <i class="iconfont icon-youhuiquan"></i>
+      <text>优惠券</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </navigator>
+    <navigator url="../orderRecord/orderRecord" class="s_nav_item bor_b">
+      <i class="iconfont icon-dingdan"></i>
+      <text>订单记录</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </navigator>
+    <navigator url="../orderCard/orderCard" class="s_nav_item bor_b">
+      <i class="iconfont icon-chanpinyuyue"></i>
+      <text>预约信息</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </navigator>
+    <navigator url="../contact/contact" class="s_nav_item bor_b">
+      <i class="iconfont icon-custom-service"></i>
+      <text>联系我们</text>
+      <image src="{{s_last_Dawn}}" class='last_DawnImage'></image>
+    </navigator>
+    <navigator class='flex_af f_28 p_40' target="miniProgram" open-type="navigate" appId="wx1773ca9a5221af5b">技术支持 @ 风擎网络科技</navigator>
+  </view>
+
+  
+</view>

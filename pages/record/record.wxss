@@ -1,0 +1,23 @@
+/* pages/record/record.wxss */
+.s_qiqingquan{
+  color: #999;
+  margin: 50% 0 0;
+  font-size: 34rpx;
+}
+.s_qiqingquan image{
+  width: 180rpx;
+  height: 180rpx;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+  margin-bottom: 20rpx;
+}
+.recordList{
+  padding: 40rpx;
+  border-bottom: 1px solid #eee;
+  font-size:34rpx;
+  color:#999;
+}
+.record_header{
+  font-size: 38rpx;
+  color: #333;
+}

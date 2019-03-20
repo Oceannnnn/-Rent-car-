@@ -1,0 +1,14 @@
+<!--pages/toLogin/toLogin.wxml-->
+<view class='flex_af page p_40'>
+  <image src='../../public/image/huan.png'></image>
+  <view class='ti'>提示</view>
+  <view class='mt_20 c_999 f_32 wubi'>请您务必允许我们获取您的用户信息权限，以便给您提供更好的用户体验</view>
+  <button class='s_foot mb_20' open-type="getUserInfo" bindgetuserinfo='getUserInfo'>确认</button>
+  <button class='s_foot' type="default" bindtap='cancel'>取消</button>
+
+
+
+
+
+
+</view>

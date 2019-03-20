@@ -1,0 +1,71 @@
+<!--pages/useCar/useCar.wxml-->
+<view class='p_40'>
+  <view>
+    <text class='s_my'>在线预约</text>
+  </view>
+  <form bindsubmit="formSubmit" class='card_form'>
+    <view>
+      <view class='c_16A'>
+        姓名*
+      </view>
+      <view class="formInput">
+        <input type='text' name="name"/>
+      </view>
+    </view>
+    <view>
+      <view class='c_16A'>
+        电话*
+      </view>
+      <view class="formInput">
+        <input type='number' name="phone" maxlength='11'/>
+      </view>
+    </view>
+    <view>
+      <view class='c_16A'>
+        车辆数*
+      </view>
+      <view class="formInput">
+        <input type='text' type='number' name="car_num" bindchange="carNum" value="{{carNum}}"/>
+      </view>
+      <view class='explain'>
+        <text>(每辆车6元,超过90分钟没提车,扣除总金额的30%)</text>
+      </view>
+    </view>
+    <view>
+      <view class='c_16A'>
+        日期*
+      </view>
+      <view class="formInput">
+        <picker class="orderData" mode="date" value="{{date}}" start="{{s_Data}}" bindchange="bindDateChange" name="use_date" bindtap='resetData'>
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view>
+      <view class='c_16A'>
+        时间*
+      </view>
+      <view class="formInput">
+        <picker class="orderTime" mode="time" value="{{time}}" start="{{s_Time}}" bindchange="bindTimeChange" name="use_time" bindtap='resetData'>
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='beizhu'>
+      <view class='c_16A'>
+        备注
+      </view>
+      <view class="formInput">
+        <textarea name="content"/>
+      </view>
+      <view class='bg'>
+        <image src='../../public/image/bg1.png'></image>
+      </view>
+    </view>
+    <button formType="submit" class='s_foot'>立即预约</button>
+  </form>
+</view>

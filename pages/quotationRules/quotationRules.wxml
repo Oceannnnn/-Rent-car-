@@ -1,0 +1,32 @@
+<!--pages/quotationRules/quotationRules.wxml-->
+<view>
+  <image src='../../public/image/bg3.png' class='ruleImg'></image>
+  <view class='rulePage p_40'>
+    <view class='rule_my c_16A'>计价规则</view>
+    <view class='rule_body'>
+      <view class='flex item'>
+        <view class='rule_left c_16A'>起步价(解锁5分钟后开始计算)</view>
+        <view class='rule_right'>6元/小时</view>
+      </view>
+      <view class='flex item'>
+        <view class='rule_left c_16A'>正常价</view>
+        <view class='rule_right'>6元/小时；35元/天</view>
+      </view>
+      <view class='flex item'>
+        <view class='rule_left c_16A'>车型说明</view>
+        <view class='rule_right'>平台所有车型均是统一价格</view>
+      </view>
+      <view class='flex_i rule_last item'>
+        <image src='../../public/image/huan.png'></image>
+        <view>次日换车与正常价一样</view>
+      </view>
+      <view class='flex rule_footer item'>
+        平台鼓励绿色出行
+      </view>
+      <view class='rule_footer flex mb_20'>
+        <view>注：我们可能会临时调整价格以保障服务能力。</view>
+      </view>
+    </view>
+    
+  </view>
+</view>

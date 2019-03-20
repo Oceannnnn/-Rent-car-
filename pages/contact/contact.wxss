@@ -1,0 +1,48 @@
+/* pages/contact/contact.wxss */
+page{
+  /* background: #ecf0f1 */
+}
+.s_page{
+  padding: 40rpx 0;
+}
+.s_page image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.s_title{
+  font-size: 42rpx;
+  font-weight: 700;
+  margin: 20rpx 0;
+  letter-spacing:2px;
+}
+.s_jianjie{
+  font-size: 36rpx;
+  color: #999;
+  padding: 20rpx 32rpx 0;
+  line-height: 50rpx;
+}
+.s_item{
+  padding: 28rpx 0;
+}
+.s_header{
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+  width: 200rpx;
+  color: #333;
+}
+.s_body{
+  font-size: 34rpx;
+  color: #999;
+}
+.s_phone{
+  position: fixed;
+  padding: 20rpx 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.fqgw{
+  border-bottom: 1px solid #16A085;
+  color: #16A085;
+}

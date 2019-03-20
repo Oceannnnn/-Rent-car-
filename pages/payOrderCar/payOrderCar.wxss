@@ -1,0 +1,10 @@
+/* pages/payOrderCar/payOrderCar.wxss */
+@import "../pay/pay.wxss";
+.pay-ways{
+  border-top: none;
+}
+.cancel_text{
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: #999;
+}

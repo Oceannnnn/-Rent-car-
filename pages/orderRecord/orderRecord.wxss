@@ -1,0 +1,107 @@
+/* pages/orderRecord/orderRecord.wxss */
+@import "../../public/font/iconfont.wxss";
+page{
+  background: #fff;
+}
+.s_myorder{
+  padding: 40rpx 40rpx 0; 
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+}
+.s_my{
+  font-size: 44rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.s_qixingitem{
+  margin-top: 30rpx;
+}
+.s_qixing{
+  border-bottom: 2px solid #16A085;
+}
+.s_zw image{
+  width: 260rpx;
+  height: 260rpx;
+  margin: 30% 0 40rpx; 
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
+.s_zw text{
+ color: #999;
+}
+.s_gong{
+  padding: 30rpx 0;
+}
+.s_gong text{
+  color: #16A085;
+}
+.s_order{
+  padding: 30rpx 0;
+  font-size: 36rpx;
+  color: #999;
+}
+.s_orderData{
+  color: #333;
+  font-size: 36rpx;
+}
+.s_orderTime .iconfont{
+  color: #5D94C9;
+}
+.s_orderPay .iconfont{
+  color: #BA7871;
+}
+.s_orderPay .iconfont,.s_orderTime .iconfont{
+  margin-right: 14rpx;
+  font-size: 34rpx;
+}
+.s_orderNumber,.s_orderItem{
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.s_orderPay{
+  margin-left: 46rpx;
+}
+.orderCancelItem{
+  padding: 15rpx 40rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.orderComplete{
+  background: #16A085;
+}
+.orderCancel{
+  background: #DA242A;
+}
+.orderCon{
+  display: flex;
+  justify-content:flex-end;
+}
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 32rpx;
+    display: flex;
+    margin: 10rpx 0 0 -10rpx;
+}
+.swiper-tab-item{
+    display: inline-block;
+    width: 20%;
+    color:#999;
+}
+.active{
+    color:#333;
+    border-bottom: 2px solid #16A085;
+}
+.weui-cells__title{
+  margin-top: 190rpx;
+}
+.unOrder{
+  margin: 20rpx 0 0 0;
+}

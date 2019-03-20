@@ -1,0 +1,42 @@
+<!--pages/merchant/merchant.wxml-->
+<view>
+  <view class='shop_header'>
+    <text class='s_my'>{{shop_name}}</text>
+  </view>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+    <block wx:for="{{shop_img}}" wx:for-index="index" wx:key="{{item}}">  
+      <swiper-item>  
+        <image src="{{item.pic}}" class="slide-image" mode="aspectFill"/>  
+      </swiper-item>  
+    </block>  
+  </swiper>
+
+  <view class='shop_body'>
+    <view class='s_item bor_b flex_ic'>
+      <view class='shop_left'>
+        <view class='s_header'>地址</view>
+        <view class='s_body'>{{shop_address}}</view>
+      </view>
+      <view class='shop_icon' bindtap='mapLocate'>
+        <i class="iconfont icon-msnui-map-locate"></i>
+        <!-- <text>导航</text> -->
+      </view>
+    </view>
+    <view class='s_item bor_b flex_ic'>
+      <view class='shop_left'>
+        <view class='s_header'>电话</view>
+        <view class='s_body mt_10'>{{shop_phone}}</view>
+      </view>
+      <view class='shop_icon' bindtap='shopPhone'>
+        <i class="iconfont icon-telephone"></i>
+        <!-- <text>拨打</text> -->
+      </view>
+    </view>
+    <view class='s_item flex_i shop_car mt_20'>
+      <view class='s_header'>可用车</view>
+      <view class='c_16A'>{{shop_num}}</view>
+      <view class='s_header shop_liang'>辆</view>
+    </view>
+  </view>
+  <view class='s_useCar' bindtap='useCar'>预约用车</view> 
+</view>

@@ -1,0 +1,22 @@
+<!--pages/charge/charge.wxml-->
+<view container>
+  <view class='price'>
+    <view class='price-info'>
+      <text class='price-left'>起步价(解锁5分钟后开始计算)</text>
+      <text class='price-right'>6.00元</text>
+    </view>
+    <view class='time-info'>
+      <text>含时长60分钟</text>
+      <text></text>
+    </view>
+  </view>
+  
+  <view class='charge'>
+    <view>
+      总计约<text>{{money}}</text>元
+    </view>
+  </view>
+  <view class='rule' bindtap='rule'>
+    <text>查看计价规则</text>
+  </view>
+</view>

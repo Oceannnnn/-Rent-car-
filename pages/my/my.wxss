@@ -1,0 +1,42 @@
+@import "../../public/font/iconfont.wxss";
+.s_my .s_info,.s_my .s_info button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 60rpx;
+    font-size:32rpx;
+    background: #ecf0f1;
+}
+.s_name{
+  position: relative;
+}
+.s_my .s_info image{
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    margin-bottom: 20rpx;
+} 
+.s_member{
+  margin:20rpx 40rpx 0 0;
+}
+.s_integral{
+  margin:20rpx 0 0 0;
+}
+.s_nav_list{
+    background: #fff;
+    margin-top: 20rpx;
+    font-size:32rpx;
+}
+.s_nav_item{
+    display: flex;
+    padding: 40rpx 20rpx;
+}
+.s_nav_item i{
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}
+.s_nav_item text{
+  width: 100%
+}

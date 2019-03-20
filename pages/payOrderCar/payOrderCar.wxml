@@ -1,0 +1,51 @@
+<!--pages/payOrderCar/payOrderCar.wxml-->
+<view container>
+  <view class='price'>
+    <view class='price-info mb_20'>
+      <text class='price-left'>需支付</text>
+      <text class='price-right'>￥{{price}}</text>
+    </view>
+  </view>
+  <view class='flex_ic pay-ways' bindtap='actionSheetTap'>
+    <view wx:if='{{menu != 2}}'>
+      <view class='flex_i' wx:if="{{price < s_balance}}">
+          <view class="flex_i">
+              <image src='../../public/image/yue.png' class='pay-icon'></image> 
+              <view class="pay-text {{price > s_balance?'zwky':''}}">余额支付</view>
+          </view> 
+          <text class="{{price > s_balance?'zwky':''}}">(剩余￥{{s_balance}})<text wx:if="{{price > s_balance}}">(余额不足)</text></text>
+      </view>
+    </view>
+    <view class='flex_i' wx:if="{{menu == 2}}">
+        <image src='../../public/image/pay.png' class='pay-icon'></image> 
+        <view class="pay-text">微信支付</view>
+    </view>
+    <image src='../../public/image/last_Dawn.png' class='dawn'></image>
+  </view>
+  <view class='con'>
+    <view class='payment'>
+      <text>实际支付<text class='final-payment c_16A'>{{price}}</text>元</text> 
+    </view>
+    <view class='payBg'>
+      <image src='../../public/image/bg2.png'></image>
+    </view>
+  </view>
+  <button class='pay-btn' bindtap='toPay' disabled="{{disabled}}">
+    <text>确定支付<text>{{price}}</text>元</text>
+  </button>
+  <text class='cancel_text'>(超过提车时间1h取消预约概不退款。)</text>
+</view>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+    <action-sheet-item bindtap="bindBalance" class="flex_i">
+        <view class="flex_i action_header">
+            <image src='../../public/image/yue.png' class='pay-icon'></image> 
+            <view class="pay-text {{price > s_balance?'zwky':''}}">余额支付</view>
+        </view> 
+        <text class="{{price > s_balance?'zwky':''}}">(剩余￥{{s_balance}})<text wx:if="{{price > s_balance}}">(余额不足)</text></text>
+    </action-sheet-item>
+    <action-sheet-item bindtap="bindWechat" class="flex_i">
+        <image src='../../public/image/pay.png' class='pay-icon action_header'></image> 
+        <view class="pay-text">微信支付</view>
+    </action-sheet-item>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>

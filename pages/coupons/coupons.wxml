@@ -1,0 +1,38 @@
+<!--pages/coupons/coupons.wxml-->
+<view>
+  <view class='coupn_header'>
+    <view class='p_40 bg_f s_youhui'>
+      <text class='s_my'>我的优惠券</text>
+    </view>
+    <view class="swiper-tab bg_f">
+        <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">骑行券</view>
+        <!-- <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">礼品券</view> -->
+    </view>
+  </view>
+  <view class="weui-cells__title" hidden="{{!isShow}}">
+    <view>
+      <view wx:if="{{s_haveQi!=''}}" class='coupon_body'>
+        <view wx:for="{{s_haveQi}}" wx:key="{{itemName}}" wx:for-item="itemName" class='s_quanItem'>
+          <view class='flex_ic s_quan bor_b'>
+            <image src='../../public/image/logo1.png'></image>
+            <view class="s_text">
+              <view class='f_38'>风擎租车骑行券</view>
+              <view class='f_32'>有效期至  {{itemName.end_time}}</view>
+            </view>
+            <text class='s_money'>￥<text class='text_size'>{{itemName.coupon_money}}</text></text>
+          </view>
+          <view class='c_999 f_28'>不限制任何车型使用</view>
+        </view>
+      </view>
+      <view wx:else class='s_qiqingquan'>
+        <view class='flex_j'>
+          <image src='../../public/image/coupon1.png'></image>
+        </view>
+        <text class='flex_j'>暂无骑行券</text>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="weui-cells__title" hidden="{{isShow}}">
+    无
+  </view> -->
+</view>

@@ -1,0 +1,2 @@
+/* pages/chargingPlace/chargingPlace.wxss */
+@import "../repairPlace/repairPlace.wxss";

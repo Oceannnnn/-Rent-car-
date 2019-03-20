@@ -1,0 +1,93 @@
+/* pages/pay/pay.wxss */
+page{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.price {
+  margin-top: 80rpx;
+  width: 600rpx;
+  border-bottom: 1rpx dashed #ccc;
+}
+.price-info {
+  text-align: center;
+  font-size: 40rpx;
+  color: #333;
+  padding-bottom: 20rpx;
+}
+.pay-icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.price-left{
+  margin-right: 10rpx;
+}
+.coupon-info{
+  display: flex;
+  justify-content: space-between;
+  padding:40rpx 10rpx;
+  font-size: 32rpx;
+}
+.pay-ways{
+  width: 600rpx;
+  border-bottom:1rpx dashed #ccc;
+  padding:40rpx 0;
+  border-top:1px solid #ccc;
+  font-size:32rpx;
+}
+.payment{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 20rpx auto;
+  font-size: 30rpx;
+  color: #666;
+  z-index: 100;
+  position: relative;
+}
+.con{
+  position: relative;
+}
+.payBg image{
+  top:40rpx;
+  left:8%;
+  position: absolute;
+  width: 480rpx;
+  height: 480rpx;
+  z-index: 0;
+  opacity: 0.4;
+}
+.payment .final-payment{
+  font-size: 60rpx;
+}
+.pay-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 380rpx 0 0 0;
+  font-size: 30rpx;
+  color: #fff;
+  background:#16A085;
+  padding: 18rpx;
+  border-radius: 10rpx;
+}
+image.dawn{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+.ke{
+  color:#F02C05;
+}
+.zwky{
+  color: #aaa;
+}
+action-sheet-item,action-sheet-cancel{
+  font-size: 32rpx;
+  padding: 40rpx 0;
+  text-align: center;
+}
+.action_header{
+  margin-left: 40rpx;
+}

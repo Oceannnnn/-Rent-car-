@@ -1,0 +1,21 @@
+<view wx:if="{{recordList!=''}}">
+  <view wx:for="{{recordList}}" wx:key="{{itemName}}" wx:for-item="itemName" class='recordList'>
+    <view class='flex_ic mb_10 record_header'>
+      <view wx:if="{{itemName.status == 1}}">充值成功</view>
+      <view wx:else>充值失败</view>
+      <view>￥{{itemName.money}}</view>
+    </view>
+    <view class='mb_10'>
+      订单号：{{itemName.order_no}}
+    </view>
+    <view class='mb_10'>
+      {{itemName.create_time}}
+    </view>
+  </view>
+</view>
+<view wx:else class='s_qiqingquan'>
+  <view class='flex_j'>
+    <image src='../../public/image/record.png'></image>
+  </view>
+  <text class='flex_j'>暂无充值记录</text>
+</view>

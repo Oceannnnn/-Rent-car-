@@ -1,0 +1,26 @@
+<!--pages/recharge/recharge.wxml-->
+
+<view class='s_recharge'>
+  <view class='f_32 p_40'>充值金额</view>
+  <view class='s_parameterWrap'>
+    <block wx:for="{{parameter}}" wx:key="parameter">
+      <view class='s_parameterInfo text-over {{item.focus?"s_checked_parameter":""}}' data-id='{{item.id}}' bindtap='s_parameterTap'>
+       <text>￥{{item.money}}</text> 
+      </view>
+    </block>
+  </view>
+
+  <view class='s_goRecharge'>
+    <view class='c_999 f_32'>
+      <view>
+        <text>点击去充值，即表示已阅读并同意</text> <text class='c_16A' bindtap='s_protocol'>《充值协议》</text>
+      </view>
+      <view>
+        <text>风擎租车不会以任何形式要求您输入银行账户或密码</text> 
+      </view>
+    </view>
+    <button class='s_foot' bindtap='s_goRecharge' disabled='{{disabled}}'>
+      <text>去充值</text>
+    </button>
+  </view>
+</view>

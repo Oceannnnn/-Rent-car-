@@ -1,0 +1,33 @@
+<!--pages/orderCard/orderCard.wxml-->
+<view>
+  <view wx:if="{{s_orderCarList ==''}}" class='s_zw'>
+    <view class='flex_j'>
+      <image src='../../public/image/msg.png'></image>
+    </view>
+    <text class='flex_j'>暂无预约</text>
+  </view>
+  <block wx:else>
+      <view class='sellerHeader bg_f'>
+        <text class='s_my'>我的预约</text>
+        <text class='cancel_text'>(超过提车时间1h取消预约概不退款。)</text>
+      </view>
+      <view class='order_body'>
+        <view class="s_order" wx:for="{{s_orderCarList}}" wx:key="{{itemName}}" wx:for-item="itemName">
+          <view class='bor_b sellerList'>
+            <view class="s_sellerName">{{itemName.site_name}}</view> 
+            <view class="s_sellerNumber">订单编号：<text>{{itemName.order_no}}</text></view> 
+            <view class="s_sellerData">提车时间：<text>{{itemName.use_date}}</text></view> 
+            <view class="s_sellerCard">预约车辆：<text>{{itemName.car_num}}</text></view> 
+            <view class="s_sellerMsg">备注：<text wx:if="{{itemName.content!=''}}">{{itemName.content}}</text><text wx:else>无</text></view> 
+          </view>
+          <view class='orderCon'>
+            <view wx:if="{{itemName.status == 3}}" class="orderCancelItem orderComplete">已完成</view>
+            <view wx:elif="{{itemName.status == 2}}" class="orderCancelItem ordercanc">已取消</view>
+            <view wx:elif="{{itemName.status == 1}}" class="orderCancelItem orderCancel" bindtap='orderCancel' data-id="{{itemName.id}}">取消</view>
+            <view wx:else class="orderCancelItem orderPay" data-id="{{itemName.id}}" data-money="{{itemName.money}}" bindtap='orderPay'>支付</view>
+          </view>
+        </view>
+      </view>
+  </block>
+</view>
+

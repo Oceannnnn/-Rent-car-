@@ -1,0 +1,35 @@
+<!--pages/useCoupon/useCoupon.wxml-->
+<view class='p_40 coupon_con'>
+  <view wx:if="{{coupon_item != ''}}">
+    <view class='coupon_item' wx:for='{{coupon_item}}' wx:key="{{itemName}}" wx:for-item="itemName" bindtap='chooseCoupon' data-coupon="{{itemName.coupon_money}}" data-id="{{itemName.id}}">
+      <view class='flex_ic coupon_body'>
+        <view class='flex_j body_l'>
+          <view class='left_header mb_20'>
+          优惠券
+          </view>
+          <view class='left_footer f_28 mb_20'>
+            有效期至{{itemName.end_time}}
+          </view>
+        </view>
+        <view class='flex body_r'>
+          <view class='right_header mb_20'>
+            <text>￥</text><text class='r_money'>{{itemName.coupon_money}}</text>
+          </view>
+          <view class='right_footer f_28 mb_20'>
+            满{{itemName.condition}}可用
+          </view>
+        </view>
+      </view>
+      <view class='coupon_footer'>
+        任何车型都可以使用。
+      </view>
+    </view>
+  </view>
+  <view wx:else class='s_qiqingquan'>
+    <view class='flex_j'>
+      <image src='../../public/image/coupon1.png'></image>
+    </view>
+    <text class='flex_j'>暂无骑行券</text>
+  </view>
+</view>
+<view class='useCoupon_foot' bindtap='UnChooseCoupon'>不使用优惠券</view>

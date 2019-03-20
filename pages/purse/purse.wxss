@@ -1,0 +1,16 @@
+/* pages/purse/purse.wxss */
+.p44{
+  padding: 44rpx 0;
+}
+.s_card,.s_lastDay{
+  font-weight: 700;
+  font-size: 36rpx;
+}
+.s_lastDay .s_text{
+  font-size: 30rpx;
+  display: block;
+  margin-bottom: 16rpx;
+}
+.s_buy{
+  font-weight: 200;
+}

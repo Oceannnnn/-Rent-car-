@@ -1,0 +1,71 @@
+/* pages/coupons/coupons.wxss */
+page{
+  background: #ECF0F1;
+  height: 100vh;
+}
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 32rpx;
+    display: flex;
+    padding-left: 20rpx;
+}
+.swiper-tab-item{
+    display: inline-block;
+    width: 20%;
+    color:#999;
+}
+.active{
+    color:#333;
+    border-bottom: 2px solid #16A085;
+}
+.s_my{
+  font-size: 46rpx;
+}
+.s_qiqingquan{
+  color: #999;
+  margin: 58% 0 0;
+}
+.s_qiqingquan image{
+  width: 260rpx;
+  height: 260rpx;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
+.s_quan{
+  margin-bottom: 20rpx;
+}
+.s_quan image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.s_quanItem{
+  background: #fff;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+}
+.s_text{
+  width:60%;
+  margin-left:30rpx;
+}
+.s_money{
+  color: #D95D49;
+}
+.text_size{
+  font-size: 50rpx;
+}
+.coupon_body{
+  padding: 20rpx;
+}
+.coupn_header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 199;
+  width: 100%;
+}
+.weui-cells__title{
+  margin-top: 230rpx;
+}

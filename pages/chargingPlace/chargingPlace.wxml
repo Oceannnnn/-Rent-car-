@@ -1,0 +1,31 @@
+<!--pages/chargingPlace/chargingPlace.wxml-->
+<view class='page'>
+  <view class='map-wrap' catchtap='s_takeback'>
+    <map id='map' latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="{{scale}}" bindmarkertap="bindmarkert" show-location>
+        <cover-image class='map-icon' src='../../public/image/dw.png' bindtap='toLocation'/>
+    </map>
+  </view>
+  <view class='repairItem' hidden='{{itemHidden}}'>
+    <view class='rLeft bor_b'>
+      <view class='rHeader mb_20 flex_ic'>
+        <view>{{name}}</view><view bindtap='itemHidden' class='f_32 c_16A'>隐藏</view>
+      </view>
+      <view class='rAddress f_34 mb_10'>{{address}}</view>
+      <view class='rTime c_999 flex_i f_34'><i class="iconfont icon-shizhong2"></i>营业时间：{{start_time}}-{{end_time}}</view>
+    </view>
+    <view class='flex_i rRight'>
+      <view class='flex_ic r_phone' bindtap='r_phone' data-phone='{{phone}}'>
+        <view>
+          <i class="iconfont icon-dianhua1"></i>
+        </view>
+        <view class='text'>电话</view>
+      </view>
+      <view class='flex_ic r_address' bindtap='r_route' data-latitude='{{latitude}}' data-longitude='{{longitude}}' data-name='{{name}}' data-address='{{address}}'>
+        <view>
+          <i class="iconfont icon-luxian"></i>
+        </view>
+        <view class='text'>路线</view>
+      </view>
+    </view>
+  </view>
+</view>

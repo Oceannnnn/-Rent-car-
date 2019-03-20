@@ -1,0 +1,40 @@
+/* pages/quotationRules/quotationRules.wxss */
+.rulePage{
+   margin-top: 2rpx; 
+   position: relative;
+   z-index: 100;
+}
+.ruleImg{
+  position: absolute;
+  opacity: 0.3;
+  width: 500rpx;
+  height: 400rpx;
+  right: 5%;
+  top:50%;
+}
+.rule_my{
+  font-size: 50rpx;
+  margin-bottom: 100rpx;
+}
+.rule_body{
+  color: #848484;
+  font-size: 32rpx;
+}
+.rule_footer{
+  color: #666;
+}
+.rule_right{
+  margin-left: 20px;
+  font-size: 30rpx;
+}
+.rule_last{
+  color: #16A085;
+}
+.rule_last image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.item{
+  margin-bottom: 40rpx;
+}

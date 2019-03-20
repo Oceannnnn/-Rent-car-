@@ -1,0 +1,90 @@
+/* pages/authentication/authentication.wxss */
+@import "../../public/font/iconfont.wxss";
+.aMsg{
+  padding:0 40rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background:#fff;
+  position:absolute;
+   top:-30rpx; 
+  letter-spacing:1px;
+  font-size:40rpx;
+}
+.aHeader{
+  width: 100%;
+  margin-top: 20rpx;
+  position: relative;
+}
+.aLine{
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+.aBody{
+  margin-top: 80rpx;
+  width: 100%;
+}
+.aItem{
+  border: 1px solid #ddd;
+  padding: 26rpx;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+  margin-bottom: 40rpx;
+}
+.aItem input{
+  margin-left: 20rpx;
+}
+.aItem .iconfont{
+  font-size: 40rpx;
+  color: #999;
+}
+.aFooter{
+  background: #16A085;
+  color: #fff;
+  font-size: 38rpx;
+   border-radius: 20rpx; 
+  width: 100%;
+  padding: 30rpx 0;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.auther_add{
+  margin-top: 40rpx;
+  /* justify-content:space-around; */
+  width: 100%;
+}
+.auther_add image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.auther_item{
+  margin: 0 auto; 
+  margin-bottom: 40rpx;
+  width: 90%;
+  height: 360rpx;
+  font-size: 30rpx;
+  border: 1px solid #eee;
+  text-align: center;
+  background: #FCFCFC;
+  position: relative;
+  justify-content: center; 
+  flex-direction:column;
+}
+.aBody2{
+  width: 100%;
+  margin-top: 50rpx;
+  text-align: center;
+}
+.auther_add .upFix,.auther_add .downFix,.auther_add .upFix image,.auther_add .downFix image,.auther_add .change{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height:360rpx;
+} 
+.auther_add .change{
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  justify-content: center; 
+  flex-direction:column;
+}
